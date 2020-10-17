@@ -8,6 +8,8 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import TextField from '@material-ui/core/TextField';
 import Logotyp_OLX_ from './Logotyp_OLX_.png'
+import SearchIcon from '@material-ui/icons/Search';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,7 +31,9 @@ export default function Header() {
             <img src={Logotyp_OLX_}  alt="logo"/>
         </div>
         <div>
+          <span><SearchIcon /></span>
           <input placeholder="Pakistan" className="textfield" />
+          <span className="expandless-icon"><ExpandLessIcon /></span>
         </div>
       </Toolbar>
     </div>
