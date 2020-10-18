@@ -49,7 +49,7 @@ export default function Header() {
             <Grid item xs={5}>
               <div className="location-item1">
 
-                <input placeholder="Pakistan" className="textfield" />
+                <input placeholder="Find Cars, Mobile Phones and more..." className="textfield" />
 
                 <span className="search-span2 "><SearchIcon style={{ fontSize: "34px" }} /></span>
 
