@@ -11,7 +11,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import TextField from '@material-ui/core/TextField';
 import Logotyp_OLX_ from './Logotyp_OLX_.png'
 import SearchIcon from '@material-ui/icons/Search';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ModeCommentOutlinedIcon from '@material-ui/icons/ModeCommentOutlined';
+import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,7 +44,7 @@ export default function Header() {
                 <input placeholder="Pakistan" className="textfield" />
                 <span className="expandless-icon">
                   <button className="btn-dropdown">
-                    <ExpandLessIcon style={{ fontSize: "34px" }} />
+                    <ExpandMoreIcon style={{ fontSize: "34px" }} />
                   </button>
                 </span>
               </div>
@@ -56,8 +59,24 @@ export default function Header() {
               </div>
             </Grid>
             <Grid item xs={4}>
-              hi
-        </Grid>
+              <div className="user-section">
+                <button className="user-icon">
+                <ModeCommentOutlinedIcon  style={{fontSize: "28px"}} />
+                </button>
+                <button className="user-icon">
+                <NotificationsNoneOutlinedIcon  style={{fontSize: "28px"}} />
+                </button>
+                
+                <button className="user-icon">
+                <AccountCircleIcon  style={{fontSize: "28px"}} />
+                <ExpandMoreIcon style={{ fontSize: "34px", paddingTop:"0px" }} />
+                </button>
+                <button className="sell-icon">
+                  + SELL
+                  {/* <span style={{fontSize: "25px"}}>+</span> SELL */}
+                </button>
+              </div>
+             </Grid>
           </Toolbar>
         </div>
 
@@ -65,45 +84,4 @@ export default function Header() {
     </div>
   );
 }
-// export default function Header() {
-//   const classes = useStyles();
 
-//   return (
-//     <div className="customNav">
-//       <div>
-//         <Toolbar>
-//           <div className="logo">
-//             <img src={Logotyp_OLX_} alt="logo" />
-//           </div>
-//           <div className="location-item">
-//             <span className="search-span1"><SearchIcon style={{ fontSize: "34px" }} /></span>
-//             <input placeholder="Pakistan" className="textfield" />
-//             <span className="expandless-icon">
-//               <button className="btn-dropdown">
-//                 <ExpandLessIcon style={{ fontSize: "34px" }} />
-//               </button>
-//             </span>
-//           </div>
-//           <div className="location-item">
-//             <span className="search-span1"><SearchIcon style={{ fontSize: "34px" }} /></span>
-//             <input placeholder="Pakistan" className="textfield" />
-//             <span className="expandless-icon">
-//               <button className="btn-dropdown">
-//                 <ExpandLessIcon style={{ fontSize: "34px" }} />
-//               </button>
-//             </span>
-//           </div>
-//           <div className="location-item">
-//             <span className="search-span1"><SearchIcon style={{ fontSize: "34px" }} /></span>
-//             <input placeholder="Pakistan" className="textfield" />
-//             <span className="expandless-icon">
-//               <button className="btn-dropdown">
-//                 <ExpandLessIcon style={{ fontSize: "34px" }} />
-//               </button>
-//             </span>
-//           </div>
-//         </Toolbar>
-//       </div>
-//     </div>
-//   );
-// }

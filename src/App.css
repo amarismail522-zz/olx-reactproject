@@ -6,7 +6,7 @@
  
     z-index: 10;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     background:rgba(243, 243, 243, 0.89);
     box-sizing: border-box;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
@@ -16,6 +16,7 @@
   display: flex;
   width: 48px;
   height: 25px;
+  cursor: pointer;
 }
 
 .customNav input{
@@ -96,5 +97,40 @@
   height: 0 auto;
   padding: 5px 7px;
   color: white ;
+  cursor: pointer;
   background-color: #002f34 ;
 }
+
+.user-section{
+  display: flex;
+  
+}
+.user-icon{
+  background-color: rgba(243, 243, 243, 0.89);
+  border-style: none;
+  outline: none;
+  padding: 9px 0px 0px 21px;
+  cursor: pointer;
+}
+.sell-icon{
+  font-size:15px;
+  font-weight: 600;
+  background-color: #ffff;
+  border-style: solid;
+  border-color: #5DEEEB #ffd12d #0482ff;
+  border-width: 5px;
+  box-shadow: 2px 2px 8px 5px rgba(167, 166, 166, 0.2)  ;
+  border-radius: 44%;
+  /* padding: 2px 14px 2px 14px; */
+  padding: 8px 15px;
+  margin-left: 24px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.Child-Navbar{
+  display: flex;
+  margin-top: 9px;
+  width: 100%;
+}
+
