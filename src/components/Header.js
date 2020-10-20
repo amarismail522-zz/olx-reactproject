@@ -2,13 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import TextField from '@material-ui/core/TextField';
 import Logotyp_OLX_ from './Logotyp_OLX_.png'
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -67,7 +61,7 @@ export default function Header() {
                 <NotificationsNoneOutlinedIcon  style={{fontSize: "28px"}} />
                 </button>
                 
-                <button className="user-icon">
+                <button className="user-icon1">
                 <AccountCircleIcon  style={{fontSize: "28px"}} />
                 <ExpandMoreIcon style={{ fontSize: "34px", paddingTop:"0px" }} />
                 </button>

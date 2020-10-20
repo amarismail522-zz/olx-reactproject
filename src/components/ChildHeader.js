@@ -1,20 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import TextField from '@material-ui/core/TextField';
-import Logotyp_OLX_ from './Logotyp_OLX_.png'
-import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ModeCommentOutlinedIcon from '@material-ui/icons/ModeCommentOutlined';
-import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,24 +19,28 @@ export default function Header() {
       <Grid container >
         <div className="Child-Navbar">
 
-          <Grid item xs={2}>
-            <div style={{fontWeight:"bold" }}>
-              ALL CATOGERIES
-           
-
+          <Grid item xs={12}>
+            <div style={{fontWeight:"bold", marginLeft:"70px", textAlign:"left", display:"flex"}}>
+              <span style={{color:"#002f34", cursor:"pointer"}}>ALL CATOGERIES</span>
+              <span><ExpandMoreIcon className="allcat-icon" style={{ fontSize: "34px", top:"0px",color:"#002f34"}} /></span>
+           <div><span className="items-cat"><button>Mobile Phones</button></span>
+               <span className="items-cat"><button>Cars</button></span>
+               <span className="items-cat"><button>Motorcycles</button></span>
+               <span className="items-cat"><button>Houses</button></span>
+               <span className="items-cat"><button>TV-Video-Audio</button></span>
+               <span className="items-cat"><button>Tablets</button></span>
+               <span className="items-cat"><button>Land & Plots</button></span></div>
+              
             </div>
            
 
            
           </Grid>
-          <Grid item xs={10}>
+          {/* <Grid item xs={}>
           <div className="zero">
-               <div>
-             
-
+               
             </div>
-            </div>
-          </Grid>
+          </Grid> */}
 
 
 

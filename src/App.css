@@ -10,6 +10,8 @@
     background:rgba(243, 243, 243, 0.89);
     box-sizing: border-box;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    padding: 5px 15px;
+    
 }
 .logo img{
   display: inline-flex;
@@ -109,6 +111,19 @@
   background-color: rgba(243, 243, 243, 0.89);
   border-style: none;
   outline: none;
+  padding: 3px 6px 3px 6px;
+  cursor: pointer;
+  margin-left: 8px;
+  margin-top: auto;
+}
+.user-icon:hover{
+  background-color: #7ee6e0;
+  border-radius: 50%;
+}
+.user-icon1{
+  background-color: rgba(243, 243, 243, 0.89);
+  border-style: none;
+  outline: none;
   padding: 9px 0px 0px 21px;
   cursor: pointer;
 }
@@ -130,7 +145,45 @@
 
 .Child-Navbar{
   display: flex;
-  margin-top: 9px;
+  margin-top: 15px;
   width: 100%;
+  position: absolute;
+
 }
 
+.zero{
+  text-align: left;
+}
+
+.banner-section{
+  background-image: url(./components/banner.jpg);
+  height: 252px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.allcat-icon{
+  font-size: 34px;
+  top:0px;
+  color:#002f34;
+  cursor: pointer;
+}
+
+.items-cat button{
+  border-style: none;
+  background-color: #fff;
+  color: #002f34;
+  cursor: pointer;
+}
+.items-cat button:hover{
+  color:#1ea19f;
+}
+.items-cat{
+  margin-left: 10px;
+}
