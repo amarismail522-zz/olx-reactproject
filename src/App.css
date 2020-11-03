@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .customNav{
  
@@ -90,6 +95,7 @@
 }
 
 .location-item1 input:focus{
+
   border: 2px solid #5DEEEB !important; 
   outline: #5DEEEB !important;
 
@@ -115,9 +121,10 @@
   cursor: pointer;
   margin-left: 8px;
   margin-top: auto;
+  box-sizing: border-box;
 }
 .user-icon:hover{
-  background-color: #7ee6e0;
+  background-color:  rgba(148, 251, 255, 0.9);
   border-radius: 50%;
 }
 .user-icon1{
@@ -141,13 +148,15 @@
   margin-left: 24px;
   margin-top: 5px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .Child-Navbar{
+  background-color: white;
   display: flex;
-  margin-top: 15px;
+  margin-top: 5px;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
 
 }
 
@@ -163,7 +172,7 @@
   background-position: 50%;
   background-size: cover;
   position: relative;
-  top: 60px;
+  /* top: 60px; */
   left: 0;
   right: 0;
   z-index: 1;
@@ -173,11 +182,12 @@
   top:0px;
   color:#002f34;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .items-cat button{
   border-style: none;
-  background-color: #fff;
+  background-color: #ffff;
   color: #002f34;
   cursor: pointer;
 }
@@ -186,4 +196,15 @@
 }
 .items-cat{
   margin-left: 10px;
+}
+
+
+
+.item{
+  margin: 4px 4px !important;
+}
+
+.freshProducts{
+  display: flex;
+
 }
